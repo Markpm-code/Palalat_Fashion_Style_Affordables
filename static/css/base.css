@@ -3,10 +3,12 @@ html {
 }
 
 body {
-    background: url('/media/homepage_background.webp') no-repeat center center fixed;
+    background: url('/media/homepage_background.webp') no-repeat center;
     background-size: cover;
-    height: 100vh;
-    color: #FFFF;
+    display:flex;
+    justify-content: center;
+    height:100vh;
+    width: 100%;
     font-family: 'Playfair Display', serif;
 }
 
@@ -23,6 +25,7 @@ body {
 }
 
 
+
 /* -------------------------------- Media Queries */
 
 /* Slightly larger container on xl screens */
@@ -34,14 +37,13 @@ body {
   
   /* fixed top navbar only on medium and up */
   @media (min-width: 992px) {
-      .fixed-top-desktop-only {
-          position: fixed;
-          top: 0;
-          right: 0;
-          left: 0;
-          z-index: 1030;
+    .fixed-top-desktop-only {
+        position: fixed;
+        top: 0;
+         right: 0;
+        left: 0;
+        z-index: 1030;
       }
   
   }
-
    
