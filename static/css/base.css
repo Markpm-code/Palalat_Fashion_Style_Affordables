@@ -5,7 +5,8 @@ html {
 body {
     background: url('/media/homepage_background.webp') no-repeat center;
     background-size: cover;
-    display:flex;
+    background-position: 0 50px;
+    /*display:flex;*/
     justify-content: center;
     height:100vh;
     width: 100%;
@@ -46,4 +47,13 @@ body {
       }
   
   }
-   
+
+@media (max-width:414px) {
+    .text_heading{
+        margin-top: -100px;
+        width:240px;
+    }
+    .shop-now-button{
+        width:200px;
+    }
+}

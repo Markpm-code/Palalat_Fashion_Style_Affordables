@@ -44,6 +44,8 @@ INSTALLED_APPS = [
     'allauth',
     'allauth.account',
     'allauth.socialaccount',
+    'crispy_forms',
+    'crispy_bootstrap5',
     'home',
 ]
 
@@ -97,6 +99,9 @@ ACCOUNT_SIGNUP_EMAIL_ENTER_TWICE =True
 ACCOUNT_USERNAME_MIN_LENGTH = 4
 LOGIN_URL = '/accounts/login/'
 LOGIN_REDIRECT_URL = '/'
+
+CRISPY_TEMPLATE_PACK = 'bootstrap5'
+CRISPY_ALLOWED_TEMPLATE_PACKS =  "bootstrap5"
 
 WSGI_APPLICATION = 'pfs_affordables.wsgi.application'
 
