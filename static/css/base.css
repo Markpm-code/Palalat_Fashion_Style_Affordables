@@ -45,6 +45,9 @@ body {
         left: 0;
         z-index: 1030;
       }
+    .input_margin{
+        margin-left: 100px;
+    } 
   
   }
 
