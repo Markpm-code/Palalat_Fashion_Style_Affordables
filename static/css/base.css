@@ -59,10 +59,17 @@ body {
     .shop-now-button{
         width:200px;
     }
-    
+    /* top margin for small screen*/
     #mobile-sign-up,
     #mobile-sign-in,
     #mobile-logout {
         margin-top: -80px;
+    }
+}
+
+@media (min-width:360px) {
+    #mobile-sign-up,
+    #mobile-sign-in {
+        margin-top: -20px;
     }
 }
