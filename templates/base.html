@@ -83,8 +83,8 @@
               <a href="" class="dropdown-item">My Profile</a>
               <a href="{% url 'account_logout' %}" class="dropdown-item">Logout</a>
               {% else %}
-              <a href="{% url 'account_signup' %}" class="dropdown-item font-weight-bold">Register</a>
-              <a href="{% url 'account_login' %}" class="dropdown-item font-weight-bold">Login</a>
+              <a href="{% url 'account_signup' %}" class="dropdown-item font-weight-bold">Sign Up</a>
+              <a href="{% url 'account_login' %}" class="dropdown-item font-weight-bold">Sign in</a>
               {% endif %}
             </div>
           </li>
