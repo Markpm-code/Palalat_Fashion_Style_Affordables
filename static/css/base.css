@@ -59,4 +59,7 @@ body {
     .shop-now-button{
         width:200px;
     }
+    #mobile-logout {
+        margin-top: -80px;
+    }
 }

@@ -1,21 +1,28 @@
-{% extends "account/base.html" %}
+{% extends "base.html" %}
 
 {% load i18n %}
 
 {% block head_title %}{% trans "Sign Out" %}{% endblock %}
 
 {% block content %}
-<h1>{% trans "Sign Out" %}</h1>
 
-<p>{% trans 'Are you sure you want to sign out?' %}</p>
+{% load crispy_forms_tags  %}
 
-<form method="post" action="{% url 'account_logout' %}">
-  {% csrf_token %}
-  {% if redirect_field_value %}
-  <input type="hidden" name="{{ redirect_field_name }}" value="{{ redirect_field_value }}"/>
-  {% endif %}
-  <button type="submit">{% trans 'Sign Out' %}</button>
-</form>
+<div class= "container-fluid" id="mobile-logout">
+  <div class="col-xs  col-sm-6 col-md-6 col-lg-4 col-xl-3 ml-4" style="margin-top: 280px;">
+    <h1 class="text-primary">{% trans "Log Out" %}</h1>
 
+    <p>{% trans 'Are you sure you want to log out?' %}</p>
+
+    <form class="login w-75 mx-auto text-dark" method="post" action="{% url 'account_logout' %}">
+      {% csrf_token %}
+      {{ form | crispy }}
+      {% if redirect_field_value %}
+      <input type="hidden" name="{{ redirect_field_name }}" value="{{ redirect_field_value }}"/>
+      {% endif %}
+      <button class="primaryAction  border border-light rounded p-2 bg-danger text-white " type="submit">{% trans 'Log Out' %}</button>
+    </form>
+  </div>  
+</div>
 
 {% endblock %}
