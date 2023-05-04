@@ -59,6 +59,9 @@ body {
     .shop-now-button{
         width:200px;
     }
+    
+    #mobile-sign-up,
+    #mobile-sign-in,
     #mobile-logout {
         margin-top: -80px;
     }
