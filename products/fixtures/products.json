@@ -1,0 +1,45 @@
+[
+    {
+        "pk": 1,
+        "model": "products.product",
+        "fields": {
+        "sku": "pp210",
+        "name": "Converse All Star",
+        "description": "Ladies shoes, Vietnam made, sizes:36, 37, 38, 39, 40",
+        "price": 700.00,
+        "category": 1,
+        "rating": 4.6,
+        "image_url": "",
+        "image": "LDp15.jpg"
+        }
+    },
+    {
+        "pk": 2,
+        "model": "products.product",
+        "fields": {
+          "sku": "pp211",
+          "name": "Coach",
+          "description": "Ladies bag, Double purpose: Handbag and Sling Bag, size: 9.3x9x4 inches",
+          "price": 520.00,
+          "category": 2,
+          "rating": 4.6,
+          "image_url": "",
+          "image": "LDp13.jpg"
+        }
+    },
+    {
+        "pk": 3,
+        "model": "products.product",
+        "fields": {
+          "sku": "pp212",
+          "name": "Red Dress",
+          "description": "Ladies dress, Good Quality, Fit from small to Xlarge frame",
+          "price": 280.00,
+          "category": 3,
+          "rating": 4.6,
+          "image_url": "",
+          "image":"LDp08.jpg"
+        }    
+    }
+
+]

@@ -1,0 +1,23 @@
+[
+    {
+    "pk": 1, "model": "products.category", "fields": {"name": "ladies_dress", "friendly_name": "Ladies Dress"}
+},
+{
+    "pk": 2, "model": "products.category", "fields": {"name": "shoes", "friendly_name": "Shoes"}
+},
+{
+    "pk": 3, "model": "products.category", "fields": {"name": "ladies_bags", "friendly_name": "Ladies Bags"}
+},
+{
+    "pk": 4, "model": "products.category", "fields": {"name": "new_arrivals", "friendly_name": "New Arrivals"}
+},
+{
+    "pk": 5, "model": "products.category", "fields": {"name": "mens_wear", "friendly_name": "Mens Wear"}
+},
+{
+    "pk": 6, "model": "products.category", "fields": {"name": "jeans", "friendly_name": "Jeans"}
+},
+{
+    "pk": 7, "model": "products.category", "fields": {"name": "kids_wear", "friendly_name": "Kids Wear"}
+}
+]
