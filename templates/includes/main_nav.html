@@ -1,14 +1,14 @@
 <div class="collapse navbar-collapse" id="main-nav">
     <ul class="navbar-nav w-auto mx-auto">
         <li class="nav-item dropdown">
-            <a class="logo-font font-weight-bold nav-link text-dark mr-5" href="#" id="all-products-link" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            <a class="logo-font font-weight-bold nav-link text-dark mr-5" href="{% url 'products' %}" id="all-products-link" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                 All Products
             </a>
             <div class="dropdown-menu border-0" aria-labelledby="all-products-link">
                 <a href="" class="dropdown-item text-primary">By Price</a>
                 <a href="" class="dropdown-item text-primary">By Rating</a>
                 <a href="" class="dropdown-item text-primary">By Category</a>
-                <a href="" class="dropdown-item text-primary">All Products</a>
+                <a href="{% url 'products' %}" class="dropdown-item text-primary">All Products</a>
             </div>
         </li>
 
@@ -20,14 +20,14 @@
                 <a href="" class="dropdown-item text-primary">Jeans</a>
                 <a href="" class="dropdown-item text-primary">Kids Wear</a>
                 <a href="" class="dropdown-item text-primary">Mens Wear</a>
-                <a href="" class="dropdown-item text-primary">Ladies Dress</a>
+                <a href="" class="dropdown-item text-primary">Ladies Wear</a>
                 <a href="" class="dropdown-item text-primary">All Clothing</a>
             </div>
         </li>
 
         <li class=" nav-item dropdown ">
             <a class="logo-font font-weight-bold nav-link text-dark mr-5" href="#" id="ladies_dress_link" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                Ladies Dress
+                Ladies Wear
             </a>
             <div class="dropdown-menu border-0" aria-labelledby="ladies_dress_link">
                 <div class="ml-4 mt-2">
