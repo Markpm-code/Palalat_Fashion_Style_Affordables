@@ -7,9 +7,9 @@
         "name": "Converse All Star",
         "description": "Ladies shoes, Vietnam made, sizes:36, 37, 38, 39, 40",
         "price": 700.00,
-        "category": 1,
-        "rating": 4.6,
-        "image_url": "",
+        "category": 2,
+        "rating": 4.8,
+        "image_url": "https://res.cloudinary.com/da80v7xri/image/upload/v1684415359/LDp15_ocryow.jpg",
         "image": "LDp15.jpg"
         }
     },
@@ -21,9 +21,9 @@
           "name": "Coach",
           "description": "Ladies bag, Double purpose: Handbag and Sling Bag, size: 9.3x9x4 inches",
           "price": 520.00,
-          "category": 2,
-          "rating": 4.6,
-          "image_url": "",
+          "category": 3,
+          "rating": 4.5,
+          "image_url": "https://res.cloudinary.com/da80v7xri/image/upload/v1684483686/LDp13_dood60.jpg",
           "image": "LDp13.jpg"
         }
     },
@@ -32,14 +32,364 @@
         "model": "products.product",
         "fields": {
           "sku": "pp212",
-          "name": "Red Dress",
+          "name": "Black Dress",
           "description": "Ladies dress, Good Quality, Fit from small to Xlarge frame",
           "price": 280.00,
-          "category": 3,
-          "rating": 4.6,
-          "image_url": "",
-          "image":"LDp08.jpg"
+          "category": 1,
+          "rating": 4.1,
+          "image_url": "https://res.cloudinary.com/da80v7xri/image/upload/v1684484092/LDp10_bfbtnx.jpg",
+          "image":"LDp10.jpg"
         }    
-    }
+    },
+    {
+      "pk": 4,
+      "model": "products.product",
+      "fields": {
+        "sku": "pp213",
+        "name": "Ladies Dress",
+        "description": "Ladies dress, Good Quality, Fit from small to Xlarge frame",
+        "price": 280.00,
+        "category": 1,
+        "rating": 4.6,
+        "image_url": "https://res.cloudinary.com/da80v7xri/image/upload/v1684483901/LDp06_sjssa8.jpg",
+        "image":"LDp06.jpg"
+      }    
+  },
+  {
+    "pk": 5,
+    "model": "products.product",
+    "fields": {
+      "sku": "pp214",
+      "name": "Air Jordan",
+      "description": "Kids wear, matching kids wear, Kids Terno",
+      "price": 280.00,
+      "category": 7,
+      "rating": 4.6,
+      "image_url": "https://res.cloudinary.com/da80v7xri/image/upload/v1684484593/LDp12_c7x0d7.jpg",
+      "image":"LDp12.jpg"
+    }    
+  },
+  {
+    "pk": 6,
+    "model": "products.product",
+    "fields": {
+      "sku": "pp215",
+      "name": "Adidas",
+      "description": "Kids wear, matching kids wear, Kids Terno",
+      "price": 280.00,
+      "category": 7,
+      "rating": 4.5,
+      "image_url": "https://res.cloudinary.com/da80v7xri/image/upload/v1684485527/LDp16_ugnrzh.jpg",
+      "image":"LDp16.jpg"
+    }    
+  },
+  {
+    "pk": 7,
+    "model": "products.product",
+    "fields": {
+      "sku": "pp216",
+      "name": "Adidas Marvel",
+      "description": "Mens shoes, sizes: 41, 42, 43, 44, 45, 100% O.E.M quality",
+      "price": 2500.00,
+      "category": 2,
+      "rating": 4.0,
+      "image_url": "https://res.cloudinary.com/da80v7xri/image/upload/v1684486159/LDp17_jzg31q.jpg",
+      "image":"LDp17.jpg"
+    }    
+  },
+  {
+    "pk": 8,
+    "model": "products.product",
+    "fields": {
+      "sku": "pp218",
+      "name": "Mens Polo",
+      "description": "Mens Polo, short sleeve, suits very well in tropical weather",
+      "price": 280.00,
+      "category": 5,
+      "rating": 4.5,
+      "image_url": "https://res.cloudinary.com/da80v7xri/image/upload/v1684486775/LDp18_dm3oyf.jpg",
+      "image":"LDp18.jpg"
+    }    
+  },
+  {
+    "pk": 9,
+    "model": "products.product",
+    "fields": {
+      "sku": "pp219",
+      "name": "Dior",
+      "description": "4 in 1 bag set, Apricot color, 14 inches",
+      "price": 450.00,
+      "category": 3,
+      "rating": 4.0,
+      "image_url": "https://res.cloudinary.com/da80v7xri/image/upload/v1684488506/LDp21_uzc6jq.jpg",
+      "image":"LDp21.jpg"
+    }    
+  },
+  {
+    "pk": 10,
+    "model": "products.product",
+    "fields": {
+      "sku": "pp220",
+      "name": "Floral Dress",
+      "description": "Ladies Floral Dress, Summer wear, Fits small to medium ",
+      "price": 220.00,
+      "category": 1,
+      "rating": 4.8,
+      "image_url": "https://res.cloudinary.com/da80v7xri/image/upload/v1684488569/LDp20_tubchi.jpg",
+      "image":"LDp20.jpg"
+    }    
+  },
+  {
+    "pk": 11,
+    "model": "products.product",
+    "fields": {
+      "sku": "pp221",
+      "name": "Blouse",
+      "description": "Ladies Blouse, Plus Size, Bangkok made, Ladies wear ",
+      "price": 330.00,
+      "category": 1,
+      "rating": 4.8,
+      "image_url": "https://res.cloudinary.com/da80v7xri/image/upload/v1684490239/LDp19_qglze0.jpg",
+      "image":"LDp19.jpg"
+    }    
+  },
+  {
+    "pk": 12,
+    "model": "products.product",
+    "fields": {
+      "sku": "pp222",
+      "name": "Maxi Dress",
+      "description": "Ladies Maxi Dress, Summer wear, Fits small to large frame ",
+      "price": 250.00,
+      "category": 1,
+      "rating": 4.0,
+      "image_url": "https://res.cloudinary.com/da80v7xri/image/upload/v1684490561/LDp22_hdavx8.jpg",
+      "image":"LDp22.jpg"
+    }    
+  },
+  {
+    "pk": 13,
+    "model": "products.product",
+    "fields": {
+      "sku": "pp223",
+      "name": "Hello Kitty Bag",
+      "description": " 3 in 1 set bag, Ladies bag, size: 10inches ",
+      "price": 250.00,
+      "category": 3,
+      "rating": 4.0,
+      "image_url": "https://res.cloudinary.com/da80v7xri/image/upload/v1684494425/LDp23_wls6y3.jpg",
+      "image":"LDp23.jpg"
+    } 
+  },
+  {
+    "pk": 14,
+    "model": "products.product",
+    "fields": {
+      "sku": "pp224",
+      "name": "Coach Sling Bag",
+      "description": "Sling Bag, Ladies Bag",
+      "price": 450.00,
+      "category": 3,
+      "rating": 4.5,
+      "image_url": "https://res.cloudinary.com/da80v7xri/image/upload/v1684496032/LDp24_c8wcta.jpg",
+      "image":"LDp24.jpg"
+    } 
+  },
+  {
+    "pk": 15,
+    "model": "products.product",
+    "fields": {
+      "sku": "pp225",
+      "name": "Adidas Super Star",
+      "description": "Mens shoes, sizes: 41, 42, 43, 44, 45, 100% O.E.M quality",
+      "price": 2300.00,
+      "category": 2,
+      "rating": 4.5,
+      "image_url": "https://res.cloudinary.com/da80v7xri/image/upload/v1684496769/LDp25_muyvec.jpg",
+      "image":"LDp25.jpg"
+    } 
+  },
+  {
+    "pk": 16,
+    "model": "products.product",
+    "fields": {
+      "sku": "pp226",
+      "name": "Playboy",
+      "description": "Menswear, sizes: medium to large",
+      "price": 300.00,
+      "category": 5,
+      "rating": 4.5,
+      "image_url": "https://res.cloudinary.com/da80v7xri/image/upload/v1684496907/LDp26_qvyqoe.jpg",
+      "image":"LDp26.jpg"
+    } 
+  }, 
+  {
+    "pk": 17,
+    "model": "products.product",
+    "fields": {
+      "sku": "pp227",
+      "name": "Adidas",
+      "description": "Ladies terno, Matching top and bottom",
+      "price": 260.00,
+      "category": 1,
+      "rating": 4.5,
+      "image_url": "https://res.cloudinary.com/da80v7xri/image/upload/v1684497807/LDp28_tlidjh.jpg",
+      "image":"LDp28.jpg"
+    } 
+  },
+  {
+    "pk": 18,
+    "model": "products.product",
+    "fields": {
+      "sku": "pp228",
+      "name": "Nike",
+      "description": "Kids wear, matching top and bottom",
+      "price": 250.00,
+      "category": 7,
+      "rating": 4.5,
+      "image_url": "https://res.cloudinary.com/da80v7xri/image/upload/v1684497821/LDp27_t6gnta.jpg",
+      "image":"LDp27.jpg"
+    } 
+  }, 
+  {
+    "pk": 19,
+    "model": "products.product",
+    "fields": {
+      "sku": "pp229",
+      "name": "Kids Terno",
+      "description": "Kids wear, 100 pesos per set, fits 2 to 3 years old, matching top and bottom ",
+      "price": 100.00,
+      "category": 3,
+      "rating": 4.5,
+      "image_url": "https://res.cloudinary.com/da80v7xri/image/upload/v1684498524/LDp29_dlm7pi.jpg",
+      "image":"LDp29.jpg"
+    } 
+  }, 
+  {
+    "pk": 20,
+    "model": "products.product",
+    "fields": {
+      "sku": "pp230",
+      "name": "Avengers",
+      "description": "Kids wear, 100 pesos per set, fits 3 to 5 years old, matching top and bottom, blue color",
+      "price": 100.00,
+      "category": 3,
+      "rating": 4.5,
+      "image_url": "https://res.cloudinary.com/da80v7xri/image/upload/v1684498799/LDp30_zye5kg.jpg",
+      "image":"LDp30.jpg"
+    } 
+  },
+  {
+    "pk": 21,
+    "model": "products.product",
+    "fields": {
+      "sku": "pp231",
+      "name": "Skechers",
+      "description": "Ladies shoes, soft and comfortable for walking and running, sizes: 40, 40.5, 41.5, 42, 42.5, 43.5, 44",
+      "price": 650.00,
+      "category": 2,
+      "rating": 4.3,
+      "image_url": "https://res.cloudinary.com/da80v7xri/image/upload/v1684502021/LDp31_w3dgdp.jpg",
+      "image":"LDp31.jpg"
+    } 
+  }, 
+  {
+    "pk": 22,
+    "model": "products.product",
+    "fields": {
+      "sku": "pp232",
+      "name": "Jeans",
+      "description": "Ladies Jeans, made with 100% cotton, fit small to medium sizes",
+      "price": 450.00,
+      "category": 6,
+      "rating": 3.7,
+      "image_url": "https://res.cloudinary.com/da80v7xri/image/upload/v1684502389/LDp32_f14iba.jpg",
+      "image":"LDp32.jpg"
+    } 
+  },
+  {
+    "pk": 23,
+    "model": "products.product",
+    "fields": {
+      "sku": "pp233",
+      "name": "Gap",
+      "description": "Ladies 3 in 1 outfit, fit small to large",
+      "price": 300.00,
+      "category": 1,
+      "rating": 4.5,
+      "image_url": "https://res.cloudinary.com/da80v7xri/image/upload/v1684502767/LDp33_mp1vo7.jpg",
+      "image":"LDp33.jpg"
+    } 
+  }, 
+  {
+    "pk": 24,
+    "model": "products.product",
+    "fields": {
+      "sku": "pp234",
+      "name": "Long Sleeve Polo",
+      "description": "Menswear, soft fabric, comfortable to wear, size: medium",
+      "price": 380.00,
+      "category": 5,
+      "rating": 4.0,
+      "image_url": "https://res.cloudinary.com/da80v7xri/image/upload/v1684503469/LDp34_lh4akn.jpg",
+      "image":"LDp34.jpg"
+    } 
+  },  
+  {
+    "pk": 25,
+    "model": "products.product",
+    "fields": {
+      "sku": "pp235",
+      "name": "Gucci",
+      "description": "Ladies sando/vest, 3pcs for Php 200.00, fit small to to large",
+      "price": 450.00,
+      "category": 1,
+      "rating": 4.5,
+      "image_url": "https://res.cloudinary.com/da80v7xri/image/upload/v1684503739/LDp35_jvxer8.jpg",
+      "image":"LDp35.jpg"
+    } 
+  },
+  {
+    "pk": 26,
+    "model": "products.product",
+    "fields": {
+      "sku": "pp236",
+      "name": "Aloha",
+      "description": "Ladies wear, Rush Guard, protects against chaffing and sunburn, Terno/Matching top and bottom",
+      "price": 220.00,
+      "category": 4,
+      "rating": 4.5,
+      "image_url": "https://res.cloudinary.com/da80v7xri/image/upload/v1684505534/LDp36_dzhqz5.jpg",
+      "image":"LDp36.jpg"
+    } 
+  }, 
+  {
+    "pk": 27,
+    "model": "products.product",
+    "fields": {
+      "sku": "pp237",
+      "name": "Black Swimwear",
+      "description": "Ladies 3 in 1 swimwear outfit",
+      "price": 450.00,
+      "category": 1,
+      "rating": 4.3,
+      "image_url": "https://res.cloudinary.com/da80v7xri/image/upload/v1684505932/LDp37_b3jjlh.jpg",
+      "image":"LDp37.jpg"
+    } 
+  }, 
+  {
+    "pk": 28,
+    "model": "products.product",
+    "fields": {
+      "sku": "pp238",
+      "name": "Christian Dior Paris",
+      "description": "Ladies backpack, durable material, 100% O.E.M quality",
+      "price": 380.00,
+      "category": 3,
+      "rating": 4.7,
+      "image_url": "https://res.cloudinary.com/da80v7xri/image/upload/v1684506370/LDp38_rwfbyl.jpg",
+      "image":"LDp38.jpg"
+    } 
+  }
 
 ]
