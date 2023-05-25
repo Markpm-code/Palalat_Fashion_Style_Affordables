@@ -14,7 +14,10 @@
     <div class="container-fluid" style="margin-top:120px;" >
         <div class="row">
             <div class="col-12 col-md-6 col-lg-4 offset-lg-2 ">
-                <div class="image-container my-5 ">
+                <div class="mt-5 text-center p-4">
+                    <a href="{% url 'products' %}"><i class="fa-sharp fa-solid fa-arrow-left mr-2"></i>back to all affordable products</a>
+                </div>
+                <div class="image-container mt-0 ">
                     {% if product.image %}
                         <a href="{{ product.image.url }}" target="_blank">
                             <img class="card-img-top img-fluid" src="{{ product.image.url }}" alt="{{ product.name }}">
@@ -29,7 +32,7 @@
             <div class="col-12 col-md-6 col-lg-4">
                 <div class="product-details-container mb-5 md-5" style="margin-top: 140px;">
                     <p class="mb-0 text-primary font-weight-bold " style="font-size:30px;">{{ product.name }}</p>
-                    <p class="lead mb-0 text-left font-weight-bold">Php {{ product.price }}</p>
+                    <p class="lead mb-0  font-weight-bold">Php {{ product.price }}</p>
                     {% if product.rating %}
                         <small class="text-muted"><i class="fas fa-star mr-1 text-danger"></i>{{ product.rating }} / 5</small>
                     {% else %}
