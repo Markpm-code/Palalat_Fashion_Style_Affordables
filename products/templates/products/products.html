@@ -14,7 +14,7 @@
     <div class="container-fluid">
         <div class="row">
             <div class="col text-center " style="margin-top: 180px;">
-                <h2 class="logo-font">Affordable Products</h2>
+                <h2 class="logo-font"><span class="text-primary font-weight-bold">AFFORDABLE</span> <span class="text-white bg-danger rounded px-2">PRODUCTS</span></h2>
                 <hr class=" w-75 mb-1">
             </div>
         </div>
@@ -35,7 +35,7 @@
                                 </a>
                                 {% endif %}
                                 <div class="card-body pb-0">
-                                    <p class="mb-0 font-weight-bold">{{ product.name }}</p>
+                                    <p class="mb-0 font-weight-bold text-primary">{{ product.name }}</p>
                                     <p class="mb-0 text-left ">{{ product.description }}</p>
                                 </div>
                                 <div class="card-footer bg-white pt-0 border-0 text-left">
@@ -43,7 +43,7 @@
                                         <div class="col">
                                             <p class="lead mb-0 text-left font-weight-bold">Php {{ product.price }}</p>
                                             {% if product.rating %}
-                                                <small class="text-muted"><i class="fas fa-star mr-1"></i>{{ product.rating }} / 5</small>
+                                                <small class="text-muted"><i class="fas fa-star mr-1 text-danger"></i>{{ product.rating }} / 5</small>
                                             {% else %}
                                                 <small class="text-muted">No Rating</small>
                                             {% endif %}
