@@ -17,11 +17,10 @@
                 Clothings
             </a>
             <div class="dropdown-menu border-0" aria-labelledby="all_clothings_links">
-                <a href="" class="dropdown-item text-primary">Jeans</a>
-                <a href="" class="dropdown-item text-primary">Kids Wear</a>
-                <a href="" class="dropdown-item text-primary">Mens Wear</a>
-                <a href="" class="dropdown-item text-primary">Ladies Wear</a>
-                <a href="" class="dropdown-item text-primary">All Clothing</a>
+                <a href="{% url 'products' %}?category=jeans" class="dropdown-item text-primary">Jeans</a>
+                <a href="{% url 'products' %}?category=mens_wear" class="dropdown-item text-primary">Mens Wear</a>
+                <a href="{% url 'products' %}?category=kids_wear" class="dropdown-item text-primary">Kids Wear</a>
+                <a href="{% url 'products' %}?category=jeans,mens_wear,kids_wear" class="dropdown-item text-primary">All Clothing</a>
             </div>
         </li>
 
@@ -31,13 +30,13 @@
             </a>
             <div class="dropdown-menu border-0" aria-labelledby="ladies_dress_link">
                 <div class="ml-4 mt-2">
-                    <a href="#" class="text-uppercase font-weight-bold py-2 text-primary">All Ladies Wear</a>
+                    <a href="{% url 'products' %}?category=ladies_wear" class="text-uppercase font-weight-bold py-2 text-primary">All Ladies Wear</a>
                 </div>
-                <a href="#" >
+                <a href="{% url 'products' %}?category=ladies_wear" >
                     <img src="/media/LDp06.jpg">
                 </a>
                 <div class="ml-4 mt-2">
-                    <a href="" class="btn btn-sm  text-uppercase py-2 bg-danger text-white rounded  ">Shop Now &raquo</a>
+                    <a href="{% url 'products' %}?category=ladies_wear" class="btn btn-sm  text-uppercase py-2 bg-danger text-white rounded  ">Shop Now &raquo</a>
                 </div>
             </div>
         </li>
@@ -48,30 +47,30 @@
             </a>
             <div class="dropdown-menu border-0" aria-labelledby="ladies_bags_links">
                 <div class="ml-4 mt-2">
-                    <a href="#" class="text-uppercase font-weight-bold py-2 text-primary">All Ladies Bags</a>
+                    <a href="{% url 'products' %}?category=ladies_bags" class="text-uppercase font-weight-bold py-2 text-primary">All Ladies Bags</a>
                 </div>
-                <a href="#" >
+                <a href="{% url 'products' %}?category=ladies_bags" >
                     <img src="/media/LDp13.jpg">
                 </a>
                 <div class="ml-4 mt-2">
-                    <a href="" class="btn btn-sm  text-uppercase py-2 bg-danger text-white rounded  ">Shop Now &raquo</a>
+                    <a href="{% url 'products' %}?category=ladies_bags" class="btn btn-sm  text-uppercase py-2 bg-danger text-white rounded  ">Shop Now &raquo</a>
                 </div>
             </div>
         </li>
 
         <li class=" nav-item dropdown">
-            <a href="#" class="logo-font font-weight-bold nav-link text-dark mr-5" href="#" id="shoes_links" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            <a class="logo-font font-weight-bold nav-link text-dark mr-5" href="#" id="shoes_links" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                 Shoes
             </a>
             <div class="dropdown-menu border-0" aria-labelledby="shoes_links">
                 <div class="ml-4 mt-2">
-                    <a href="#" class="text-uppercase font-weight-bold py-2 text-primary">All Shoes</a>
+                    <a href="{% url 'products' %}?category=shoes" class="text-uppercase font-weight-bold py-2 text-primary">All Shoes</a>
                 </div>
-                <a href="#" >
+                <a href="{% url 'products' %}?category=shoes" >
                     <img src="/media/LDp15.jpg">
                 </a>
                 <div class="ml-4 mt-2">
-                    <a href="" class="btn btn-sm  text-uppercase py-2 bg-danger text-white rounded  ">Shop Now &raquo</a>
+                    <a href="{% url 'products' %}?category=shoes" class="btn btn-sm  text-uppercase py-2 bg-danger text-white rounded  ">Shop Now &raquo</a>
                 </div>
             </div>
         </li>
@@ -82,13 +81,13 @@
             </a>
             <div class="dropdown-menu border-0" aria-labelledby="new_arrivals_links">
                 <div class="ml-4 mt-2">
-                    <a href="#" class="text-uppercase font-weight-bold py-2 text-primary">All New Arrivals</a>
+                    <a href="{% url 'products' %}?category=new_arrivals" class="text-uppercase font-weight-bold py-2 text-primary">All New Arrivals</a>
                 </div>
-                <a href="#" >
+                <a href="{% url 'products' %}?category=new_arrivals" >
                     <img src="/media/LDp12.jpg">
                 </a>
                 <div class="ml-4 mt-2">
-                    <a href="#" class="btn btn-sm  text-uppercase py-2 bg-danger text-white rounded  ">Shop Now &raquo</a>
+                    <a href="{% url 'products' %}?category=new_arrivals" class="btn btn-sm  text-uppercase py-2 bg-danger text-white rounded  ">Shop Now &raquo</a>
                 </div>
             </div>
         </li>

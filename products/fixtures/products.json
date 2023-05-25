@@ -259,7 +259,7 @@
       "name": "Kids Terno",
       "description": "Kids wear, 100 pesos per set, fits 2 to 3 years old, matching top and bottom ",
       "price": 100.00,
-      "category": 3,
+      "category": 7,
       "rating": 4.5,
       "image_url": "https://res.cloudinary.com/da80v7xri/image/upload/v1684498524/LDp29_dlm7pi.jpg",
       "image":"LDp29.jpg"
@@ -273,7 +273,7 @@
       "name": "Avengers",
       "description": "Kids wear, 100 pesos per set, fits 3 to 5 years old, matching top and bottom, blue color",
       "price": 100.00,
-      "category": 3,
+      "category": 7,
       "rating": 4.5,
       "image_url": "https://res.cloudinary.com/da80v7xri/image/upload/v1684498799/LDp30_zye5kg.jpg",
       "image":"LDp30.jpg"
