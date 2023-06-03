@@ -1,5 +1,5 @@
 from django.contrib import admin
-from .models import Product, Category
+from .models import Product, Category, ProductReview
 
 
 class ProductAdmin(admin.ModelAdmin):
@@ -20,5 +20,16 @@ class CategoryAdmin(admin.ModelAdmin):
         'name',
     )
 
+
+class ProductReviewAdmin(admin.ModelAdmin):
+    list_display = (
+        'user',
+        'product',
+        'rating',
+        'review_text',
+    )    
+
 admin.site.register(Product)
 admin.site.register(Category)
+admin.site.register(ProductReview)
+
