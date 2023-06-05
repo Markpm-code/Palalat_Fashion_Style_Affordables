@@ -15,7 +15,7 @@
     <div class="overlay"></div>
     <div class="container-fluid" style="margin-top:120px;" >
         <div class="row">
-            <div class="col-12 col-md-6 col-lg-4 offset-lg-2 ">
+            <div class="col-12 col-md-6 col-sm-6 col-lg-4 offset-lg-2 ">
                 <div class="mt-5 text-center p-4">
                     <a href="{% url 'products' %}"><i class="fa-sharp fa-solid fa-arrow-left mr-2"></i>back to all affordable products</a>
                 </div>
@@ -31,11 +31,11 @@
                     {% endif %}
                 </div>
             </div>
-            <div class="col-12 col-md-6 col-lg-4">
+            <div class="col-12 col-md-6  col-sm-6 col-lg-4">
                 <div class="mt-5 text-center p-4">
                     <a href="{% url 'products' %}?category={{ product.category }}" class="mx-auto"><i class="fa-sharp fa-solid fa-arrow-left mr-2"></i>back to all affordable {{ product.category }}</a>   
                 </div>    
-                <div class="product-details-container mb-5 md-5 text-center" style="margin-top: 140px;">
+                <div class="product-details-container mb-5 md-5 text-center" style="margin-top: 40px;">
                     <p class="mb-0 text-primary font-weight-bold " style="font-size:30px;">{{ product.name }}</p>
                     <p class="lead mb-0  font-weight-bold">Php {{ product.price }}</p>
                     {% if product.rating %}
@@ -45,34 +45,46 @@
                     {% endif %}
                     <p class="mt-3">{{ product.description }}</p>
                 </div>
-                <div>
-                    <h3 class="text_primary">Reviews - {{product.rating}} / 5 <i class="fas fa-star mr-1 text-danger"></i>
-                        <!-- Product Review Button trigger modal -->
-                        <button type="button" class="btn btn-danger btn-sm float-right" data-toggle="modal" data-target="#productReview">Add Review</button>
-                    </h3>
-                    <!-- Product Review Modal -->
-                    <div class="modal fade" id="productReview" tabindex="-1" aria-labelledby="ProductReviewModalLabel" aria-hidden="true">
-                        <div class="modal-dialog modal-dialog-centered">
-                            <div class="modal-content">
-                                <div class="modal-header">
-                                <h5 class="modal-title text-primary" id="ProductReviewModalLabel">Product Review</h5>
-                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                                    <span aria-hidden="true">&times;</span>
-                                </button>
-                                </div>
-                                <div class="modal-body">
-                                    <form method="post" action="{% url 'product_detail' product_id=product.id %}">
-                                        {% csrf_token %}
-                                        {{ form | crispy }}
-                                        <button type="submit" class="btn btn-danger">Submit Review</button>
-                                    </form>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- Product Review Modal End-->
-                </div>
             </div>
         </div>
+        <div class="col-12 col-md-12 col-lg-9 mt-4">
+            <h2 class="text-primary">Product Reviews:
+                <!--Product Review Button trigger modal-->
+                <button type="button" class="btn btn-danger btn-sm float-right mt-2 " data-toggle="modal" data-target="#productReview">Add Review</button>
+            </h2>
+            <div class="card">
+                <div class="card-body">
+                    {% for review in product.reviews.all %}
+                            <p>{{ review.review_text }}</p>
+                            <p>Rating: {{ review.rating }}/5</p>
+                            <p>User: {{ review.user }}</p>
+                            <hr>
+                        {% empty %}
+                            <p>No reviews yet.</p>
+                        {% endfor %}
+                </div>
+            </div>                            
+            <!-- Product Review Modal -->
+            <div class="modal fade" id="productReview" tabindex="-1" aria-labelledby="ProductReviewModalLabel" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                        <h5 class="modal-title text-primary" id="ProductReviewModalLabel">Product Review</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                        </div>
+                        <div class="modal-body">
+                            <form method="post" action="{% url 'product_detail' product_id=product.id %}">
+                                {% csrf_token %}
+                                {{ form | crispy }}
+                                <button type="submit" class="btn btn-danger"><i class="fa-regular fa-paper-plane mr-2"></i>Submit Review</button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>          
+        </div>
     </div>
+    
 {% endblock %}
