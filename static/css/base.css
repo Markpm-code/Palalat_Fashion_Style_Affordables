@@ -80,4 +80,9 @@ body {
     #mobile-sign-in {
         margin-top: -20px;
     }
+    /* Product Review*/
+    #review {
+        font-size: 20px;
+        margin-bottom: 20px;
+    }
 }
