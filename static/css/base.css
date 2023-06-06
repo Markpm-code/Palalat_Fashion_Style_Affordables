@@ -75,13 +75,6 @@ body {
     }
 }
 
-@media (min-width:360px) {
-    #mobile-sign-up,
-    #mobile-sign-in {
-        margin-top: -20px;
-    }
-}
-
 /* Product Review*/
 @media (max-width:393px) {
     #review {
@@ -89,3 +82,11 @@ body {
         margin-bottom: 20px;
     }
 }
+
+@media (min-width:360px) {
+    #mobile-sign-up,
+    #mobile-sign-in {
+        margin-top: -20px;
+    }
+}
+

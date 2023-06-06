@@ -20,12 +20,15 @@ def cart_contents(request):
             'quantity': quantity,
             'product': product,
         })
-
-    grand_total = total
+    
+    delivery = total * Decimal(settings.STANDARD_DELIVERY_PERCENTAGE / 100)
+    
+    grand_total = delivery + total
     
     context = {
         'cart_items': cart_items,
         'total': total,
+        'delivery': delivery,
         'product_count': product_count,
         'grand_total': grand_total,
     }
