@@ -75,6 +75,13 @@
                 <!--Product Review Button trigger modal-->
                 <button type="button" class="btn btn-danger btn-sm float-right mt-2 " data-toggle="modal" data-target="#productReview">Add Review</button>
             </h2>
+            {% for msg  in messages %}
+                <div class="alert alert-secondary alert-dismissible fade show text-center  mx-auto container-fluid"
+                    role="alert"><i class="fa-solid fa-circle-check fa-2xl text-primary"></i>
+                    {{ msg }}
+                    <button type="button" class="btn btn-sm" data-dismiss="alert" aria-label="Close"><i class="fa-solid fa-xmark text-danger"></i></button>
+                </div>
+            {% endfor %}
             <div class="card">
                 <div class="card-body">
                     {% for review in product.reviews.all %}
@@ -106,7 +113,8 @@
                         </div>
                     </div>
                 </div>
-            </div>          
+            </div>   
+            <!--Product review  modal end-->       
         </div>
     </div>
     

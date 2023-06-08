@@ -46,6 +46,7 @@ def product_detail(request, product_id):
         form = ProductReviewForm(request.POST)
         if form.is_valid():
             review = form.save(commit=False)
+            messages.success(request, 'Product review submitted successfully.')
             review.product = product
             review.save()
             return redirect('product_detail', product_id=product_id)
