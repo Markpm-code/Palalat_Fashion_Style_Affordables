@@ -17,7 +17,7 @@
         <div class="row">
             <div class="col-12 col-md-6 col-sm-6 col-lg-4 offset-lg-2 ">
                 <div class="mt-5  p-4">
-                    <a href="{% url 'products' %}"><i class="fa-sharp fa-solid fa-arrow-left mr-2"></i>back to all affordable products</a>
+                    <a href="{% url 'products' %}"><i class="fa-sharp fa-solid fa-arrow-left mr-2 btn btn-sm btn-primary"></i>back to all affordable products</a>
                 </div>
                 <div class="image-container mt-0 ">
                     {% if product.image %}
@@ -33,7 +33,7 @@
             </div>
             <div class="col-12 col-md-6  col-sm-6 col-lg-4">
                 <div class="mt-5  p-4">
-                    <a href="{% url 'products' %}?category={{ product.category }}" class="mx-auto"><i class="fa-sharp fa-solid fa-arrow-left mr-2"></i>back to all affordable {{ product.category }}</a>   
+                    <a href="{% url 'products' %}?category={{ product.category }}" class="mx-auto"><i class="fa-sharp fa-solid fa-arrow-left mr-2 btn btn-sm btn-primary"></i>back to all affordable {{ product.category }}</a>   
                 </div>    
                 <div class="product-details-container mb-5 md-5 ml-4 " style="margin-top: 40px;">
                     <p class="mb-0 text-primary font-weight-bold " style="font-size:30px;">{{ product.name }}</p>
@@ -56,13 +56,13 @@
                                 </div>
                             </div>
                             <div class="col-12">
-                                <a href="{% url 'products' %}" class="btn btn-danger mt-5">
+                                <a href="{% url 'products' %}" class="btn btn-sm btn-danger mt-5">
                                     <span class="icon">
                                         <i class="fas fa-chevron-left"></i>
                                     </span>
                                     <span class="text-uppercase">Continue Shopping</span>
                                 </a>
-                                <input type="submit" class="btn btn-primary text-uppercase mt-5" value="Add to Cart">
+                                <input type="submit" class="btn btn-sm btn-primary text-uppercase mt-5" value="Add to Cart">
                             </div>
                             <input type="hidden" name="redirect_url" value="{{ request.path }}">
                         </div>
