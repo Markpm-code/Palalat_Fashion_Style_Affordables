@@ -1,5 +1,6 @@
 from django.db import models
 from django.contrib.auth.models import User
+from django.core.exceptions import ValidationError
 
 class Category(models.Model):
 
@@ -45,3 +46,6 @@ class ProductReview(models.Model):
     def __str__(self):
         return self.review_text
 
+    def clean(self):
+        if self.rating > 5:
+            raise ValidationError("Rating must be less than or equal to 5.")
