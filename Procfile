@@ -1,0 +1,1 @@
+web: gunicorn pfs_affordables.wsgi:application
