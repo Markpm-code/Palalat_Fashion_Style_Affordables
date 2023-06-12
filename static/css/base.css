@@ -37,6 +37,8 @@ body {
 
 .footer-bg {
     background-color: #3A83FE;
+    position: sticky;
+    top: 100%;
 }
 
 
