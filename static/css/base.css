@@ -35,6 +35,12 @@ body {
 	z-index: -1;
 }
 
+.footer-bg {
+    background-color: #3A83FE;
+}
+
+/* Mailchimp */
+    
 /* -------------------------------- Media Queries */
 
 /* Slightly larger container on xl screens */
