@@ -5,7 +5,7 @@ html {
 }
 
 body {
-    background: url('/media/homepage_background.webp') no-repeat center;
+    background: url('https://res.cloudinary.com/da80v7xri/image/upload/v1686588295/homepage_background_lp53w1.webp') no-repeat center;
     background-size: cover;
     background-position: 0 50px;
     /*display:flex;*/
