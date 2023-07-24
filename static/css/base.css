@@ -70,20 +70,19 @@ body {
 
 @media (max-width:414px) {
     .text_heading{
-        margin-top: -100px;
-        width:240px;
+        margin-top: -200px;
     }
     .shop-now-button{
         width:200px;
     }
-    /* top margin for small screen*/
     #mobile-sign-up,
     #mobile-sign-in,
-    #mobile-logout {
-        margin-top: -80px;
+    #mobile-logout,
+    #mobile-reset-password {
+        margin-top: -90px;
     }
-    body {
-        background: none;
+    .footer-bg{
+        margin-top: -10px;
     }
 }
 
@@ -95,10 +94,14 @@ body {
     }
 }
 
-@media (min-width:360px) {
+@media (min-width: 360px) and (max-width:410px) {
     #mobile-sign-up,
-    #mobile-sign-in {
+    #mobile-sign-in,
+    #mobile-logout,
+    #mobile-reset-password{
         margin-top: -20px;
     }
+    body.home-page{
+        background-image: none;
+    }
 }
-
