@@ -82,6 +82,9 @@ body {
     #mobile-logout {
         margin-top: -80px;
     }
+    body {
+        background: none;
+    }
 }
 
 /* Product Review*/
