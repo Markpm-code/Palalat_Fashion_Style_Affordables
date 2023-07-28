@@ -84,6 +84,10 @@ body {
     .footer-bg{
         margin-top: -10px;
     }
+    .nav-link {
+        padding: 0.15rem;
+    }
+
 }
 
 /* Product Review*/
@@ -99,9 +103,9 @@ body {
     #mobile-sign-in,
     #mobile-logout,
     #mobile-reset-password{
-        margin-top: -20px;
+        margin-top: -90px;
     }
-    body.home-page{
+    /*body.home-page{
         background-image: none;
-    }
+    }*/
 }
