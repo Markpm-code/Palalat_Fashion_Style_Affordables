@@ -11,7 +11,7 @@
 
 <div class= "container-fluid" id="mobile-sign-in">
     <div class="col-xs  col-sm-6 col-md-6 col-lg-4 col-xl-3" style="margin-top: 200px;">
-        <h1 class="text-primary text-center">{% trans "Sign In" %}</h1>
+        <h1 class="text-primary">{% trans "Sign In" %}</h1>
 
         {% get_providers as socialaccount_providers %}
 
@@ -33,11 +33,11 @@
         {% include "socialaccount/snippets/login_extra.html" %}
 
         {% else %}
-        <p class="text-center">{% blocktrans %}If you have not created an account yet, then please
+        <p>{% blocktrans %}If you have not created an account yet, then please
         <a href="{{ signup_url }}">sign up</a> first.{% endblocktrans %}</p>
         {% endif %}
 
-        <form class="login w-75 mx-auto text-dark" method="POST" action="{% url 'account_login' %}">
+        <form class="login w-100 mx-auto text-dark" method="POST" action="{% url 'account_login' %}">
         {% csrf_token %}
         {{ form | crispy }}
         {% if redirect_field_value %}
