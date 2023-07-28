@@ -1,0 +1,5 @@
+User-agent: *
+Disallow: /accounts/
+Disallow: /cart/
+Disallow: /checkout/
+Sitemap: https://palalat-fashion.herokuapp.com/sitemap.xml
