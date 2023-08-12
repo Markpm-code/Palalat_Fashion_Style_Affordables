@@ -37,6 +37,11 @@ body {
 	z-index: -1;
 }
 
+.update-link,
+.remove-item {
+    cursor: pointer;
+}
+
 /* ------------------------------- bootstrap toasts */
 
 .message-container {
