@@ -1,4 +1,4 @@
-from django.shortcuts import render, redirect, HttpResponse
+from django.shortcuts import render, redirect, reverse, HttpResponse
 from django.contrib import messages
 
 from products.models import Product
@@ -11,7 +11,7 @@ def view_cart(request):
     return render(request, 'cart/shopping_cart.html')
 
 def add_to_cart(request, item_id):
-    """ Add a quantity of the specified product to the shopping bag """
+    """ Add a quantity of the specified product to the shopping cart """
 
     product = Product.objects.get(pk=item_id)
     quantity = int(request.POST.get('quantity'))
@@ -67,7 +67,7 @@ def adjust_cart(request, item_id):
             cart.pop(item_id)
 
     request.session['cart'] = cart
-    return redirect(reverse('view_bag'))
+    return redirect(reverse('view_cart'))
 
 
 def remove_from_cart(request, item_id):
