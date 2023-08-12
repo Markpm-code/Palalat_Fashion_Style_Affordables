@@ -8,9 +8,8 @@ body {
     background: url('https://res.cloudinary.com/da80v7xri/image/upload/v1686588295/homepage_background_lp53w1.webp') no-repeat center;
     background-size: cover;
     background-position: 0 50px;
-    /*display:flex;*/
     justify-content: center;
-    height:100vh;
+    height: calc(100vh - 190px);
     width: 100%;
     font-family: 'Playfair Display', serif;
 }
@@ -35,6 +34,45 @@ body {
 	position: fixed;
 	background: white;
 	z-index: -1;
+}
+
+/* Convenience classes - colors copied from Bootstrap */
+.arrow-primary {
+    border-bottom-color: #007bff !important;
+}
+
+.arrow-secondary {
+    border-bottom-color: #6c757d !important;
+}
+
+.arrow-success {
+    border-bottom-color: #28a745 !important;
+}
+
+.arrow-danger {
+    border-bottom-color: #dc3545 !important;
+}
+
+.arrow-warning {
+    border-bottom-color: #ffc107 !important;
+}
+
+.arrow-info {
+    border-bottom-color: #17a2b8 !important;
+}
+
+.arrow-light {
+    border-bottom-color: #f8f9fa !important;
+}
+
+.arrow-dark {
+    border-bottom-color: #343a40 !important;
+}
+
+.bag-notification-wrapper {
+    height: 100px;
+    overflow-x: hidden;
+    overflow-y: auto;
 }
 
 .update-link,
